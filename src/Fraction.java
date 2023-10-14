@@ -14,7 +14,7 @@ public class Fraction {
     }
 
     // Метод для знаходження НСД (найменшого спільного дільника)
-    private long gcd(long a, long b) {
+    public long gcd(long a, long b) {
         if (b == 0) {
             return a;
         } else {
@@ -23,7 +23,7 @@ public class Fraction {
     }
 
     // Метод для спрощення дробу до найменшого вигляду
-    private void simplify() {
+    public void simplify() {
         long gcd = gcd(Math.abs(numerator), Math.abs(denominator));
         numerator /= gcd;
         denominator /= gcd;
